@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
+.highlight-purple, .highlight-yellow, .highlight-interactive, .highlight-discover, .highlight-blog {
+    position: relative;
+    display: inline-block;
+}
+
+.highlight-purple::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -5%;
+    right: -5%;
+    height: 15px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><path d="M0 10 C 20 0, 40 0, 50 10 S 70 20, 100 10" stroke="%23A78BFA" stroke-width="4" fill="none" stroke-linecap="round"/></svg>');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+.highlight-yellow::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: -5%;
+    right: -5%;
+    height: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><path d="M0 10 Q 25 20, 50 10 T 100 10" stroke="%23FBBF24" stroke-width="5" fill="none" stroke-linecap="round"/></svg>');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+.highlight-interactive::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: -2%;
+    right: -2%;
+    height: 12px;
+    background-color: #A78BFA; /* purple-400 */
+    opacity: 0.3;
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.highlight-discover::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: -2%;
+    right: -2%;
+    height: 100%;
+    background-color: #FBBF24; /* yellow-400 */
+    opacity: 0.3;
+    z-index: -1;
+    border-radius: 8px;
+    transform: rotate(-1deg);
+}
+
+.highlight-blog::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -5%;
+    right: -5%;
+    height: 15px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><path d="M0 10 C 20 0, 40 0, 50 10 S 70 20, 100 10" stroke="%23A78BFA" stroke-width="4" fill="none" stroke-linecap="round"/></svg>');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+}
