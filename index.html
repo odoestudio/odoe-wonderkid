@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WonderKids - Learn and Play</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-white font-['Poppins'] overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <svg class="h-8 w-8 text-[#6B46C1]" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-5H8v-2h3V7h2v3h3v2h-3v5h-2z"/></svg>
+                    <span class="text-2xl font-bold text-gray-800">WonderKids</span>
+                </div>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-[#6B46C1] font-medium pb-1 border-b-2 border-[#6B46C1]">Home</a>
+                    <a href="#" class="text-gray-600 hover:text-[#6B46C1] font-medium">Shop</a>
+                    <a href="#" class="text-gray-600 hover:text-[#6B46C1] font-medium">About Us</a>
+                    <a href="#" class="text-gray-600 hover:text-[#6B46C1] font-medium">Contact</a>
+                </div>
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="#" class="text-gray-600 font-medium">Sign In</a>
+                    <a href="#" class="bg-[#6B46C1] text-white px-5 py-2 rounded-full font-medium hover:bg-[#55379E] transition-colors flex items-center space-x-2">
+                        <span>Contact Us</span>
+                        <i class="fas fa-arrow-up transform -rotate-45"></i>
+                    </a>
+                </div>
+                <div class="lg:hidden">
+                    <button id="menu-btn" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white p-6 absolute top-full left-0 w-full">
+            <div class="flex flex-col space-y-4">
+                <a href="#" class="text-gray-600 hover:text-[#6B46C1] font-medium">Home</a>
+                <a href="#" class="text-gray-600 hover:text-[#6B46C1] font-medium">Shop</a>
+                <a href="#" class="text-gray-600 hover:text-[#6B46C1] font-medium">About Us</a>
+                <a href="#" class="text-gray-600 hover:text-[#6B46C1] font-medium">Contact</a>
+                <hr/>
+                <a href="#" class="text-gray-600 font-medium">Sign In</a>
+                <a href="#" class="bg-[#6B46C1] text-white px-5 py-2 rounded-full font-medium text-center">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="pt-32 pb-16 container mx-auto px-6 relative">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="z-10">
+                    <h1 class="text-5xl md:text-7xl font-bold text-gray-800 leading-tight">
+                        The best place to 
+                        <span class="highlight-purple">learn</span> and 
+                        <span class="highlight-yellow">play</span> 
+                        for kids
+                    </h1>
+                    <p class="mt-6 text-gray-500 text-lg max-w-md">Discover thousands of fun and interactive learning activities to support your child's growth and learning process.</p>
+                    <button class="mt-8 bg-[#6B46C1] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#55379E] transition-colors flex items-center space-x-3">
+                        <span>Get started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="relative h-96 lg:h-auto">
+                    <!-- Decorative elements -->
+                    <div class="absolute top-10 right-10 w-20 h-20 bg-yellow-300 rounded-full opacity-50"></div>
+                    <div class="absolute bottom-10 left-10 w-16 h-16 border-4 border-purple-300 rounded-full"></div>
+                    <img src="https://images.pexels.com/photos/8471853/pexels-photo-8471853.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Happy child" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 object-cover rounded-full border-8 border-white shadow-lg z-10">
+                    <div class="absolute top-1/4 right-1/4 w-64 h-64 bg-purple-100 rounded-2xl transform rotate-12"></div>
+                    <img src="https://images.pexels.com/photos/3808055/pexels-photo-3808055.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Child thumbs up" class="absolute bottom-8 right-8 w-32 h-32 object-cover rounded-full border-4 border-white shadow-md z-20">
+                    <!-- Stamp SVG -->
+                    <svg viewBox="0 0 100 100" class="absolute top-0 left-0 w-32 h-32 text-yellow-400 fill-current opacity-80 transform -rotate-12">
+                        <path d="M50,5 A45,45 0 1,1 49.9,5.001 Z" fill="none" stroke="currentColor" stroke-width="3"/>
+                        <text x="50" y="55" font-family="Poppins, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6B46C1">WonderKids</text>
+                        <text x="50" y="70" font-family="Poppins, sans-serif" font-size="9" text-anchor="middle" fill="#6B46C1">Learning Place</text>
+                        <path d="M30 30 L35 35 M65 35 L70 30 M30 70 L35 65 M65 65 L70 70" stroke="#6B46C1" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Features Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 text-center">Our <span class="highlight-interactive">interactive</span> features</h2>
+                <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-purple-100 p-8 rounded-3xl relative overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-white/30 rounded-full"></div>
+                        <div class="relative z-10">
+                            <div class="bg-white w-16 h-16 rounded-2xl flex items-center justify-center"><i class="fas fa-puzzle-piece text-3xl text-[#6B46C1]"></i></div>
+                            <h3 class="text-2xl font-bold text-gray-800 mt-6">Fun Quiz</h3>
+                            <p class="text-gray-600 mt-2">Test your understanding with a short but fun quizzes!</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-[#6B46C1] text-white p-8 rounded-3xl relative overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                         <svg class="absolute top-0 left-0 w-full h-auto text-white/20" viewBox="0 0 100 20" preserveAspectRatio="none"><path d="M0 10 Q 12.5 0, 25 10 T 50 10 T 75 10 T 100 10" fill="currentColor"/></svg>
+                        <div class="relative z-10">
+                            <div class="bg-white/20 w-16 h-16 rounded-2xl flex items-center justify-center"><i class="fas fa-palette text-3xl text-white"></i></div>
+                            <h3 class="text-2xl font-bold mt-6">Creative Activities</h3>
+                            <p class="opacity-80 mt-2">Discover enjoyable activities such as coloring, crafting, and science.</p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-yellow-300 p-8 rounded-3xl relative overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="absolute top-4 right-4 text-yellow-500/50 text-xs">
+                            <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i><br>
+                            <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="relative z-10">
+                            <div class="bg-white w-16 h-16 rounded-2xl flex items-center justify-center"><i class="fas fa-gamepad text-3xl text-yellow-500"></i></div>
+                            <h3 class="text-2xl font-bold text-gray-800 mt-6">Learn with Games</h3>
+                            <p class="text-gray-700 mt-2">Learn something new while your kids playing games!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teachers Section -->
+        <section class="bg-[#6B46C1] py-20 text-white overflow-x-hidden">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-bold leading-snug">We aim to help children <span class="highlight-discover">discover the joy of creative</span> learning and grow into well-rounded individuals.</h2>
+                </div>
+                <div class="mt-16 relative">
+                    <div id="teacher-carousel" class="flex transition-transform duration-500 ease-in-out">
+                        <!-- Teacher Profiles -->
+                        <div class="teacher-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-4">
+                            <div class="text-center">
+                                <img src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=400" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-yellow-300" alt="Kristin Watson">
+                                <h4 class="font-bold text-xl mt-4">Kristin Watson</h4>
+                                <p class="text-yellow-300">Science Teacher</p>
+                            </div>
+                        </div>
+                        <div class="teacher-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-4">
+                            <div class="text-center">
+                                <img src="https://images.pexels.com/photos/5212338/pexels-photo-5212338.jpeg?auto=compress&cs=tinysrgb&w=400" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-yellow-300" alt="Jenny Wilson">
+                                <h4 class="font-bold text-xl mt-4">Jenny Wilson</h4>
+                                <p class="text-yellow-300">Drawing Teacher</p>
+                            </div>
+                        </div>
+                        <div class="teacher-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-4">
+                            <div class="text-center">
+                                <img src="https://images.pexels.com/photos/842950/pexels-photo-842950.jpeg?auto=compress&cs=tinysrgb&w=400" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-yellow-300" alt="Jacob Jones">
+                                <h4 class="font-bold text-xl mt-4">Jacob Jones</h4>
+                                <p class="text-yellow-300">Math Teacher</p>
+                            </div>
+                        </div>
+                        <div class="teacher-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-4">
+                            <div class="text-center">
+                                <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-yellow-300" alt="Savannah Nguyen">
+                                <h4 class="font-bold text-xl mt-4">Savannah Nguyen</h4>
+                                <p class="text-yellow-300">Reading Teacher</p>
+                            </div>
+                        </div>
+                         <div class="teacher-card flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-4">
+                            <div class="text-center">
+                                <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-yellow-300" alt="Emily Clark">
+                                <h4 class="font-bold text-xl mt-4">Emily Clark</h4>
+                                <p class="text-yellow-300">Music Teacher</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel Controls -->
+                    <button id="prev-btn" class="absolute top-1/2 -translate-y-1/2 left-0 bg-white/20 text-white w-10 h-10 rounded-full hover:bg-white/40 transition-colors"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next-btn" class="absolute top-1/2 -translate-y-1/2 right-0 bg-white/20 text-white w-10 h-10 rounded-full hover:bg-white/40 transition-colors"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 text-center">Read our <span class="highlight-blog">blog</span></h2>
+                <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Blog Post 1 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" class="w-full h-56 object-cover" alt="Child learning with headphones">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-gray-800">Learning with Games? Why not!</h3>
+                            <p class="text-gray-500 mt-2 text-sm">Embrace the joy of games to enhance your learning experience.</p>
+                            <a href="#" class="inline-flex items-center space-x-2 text-[#6B46C1] font-semibold mt-4"><span>Read More</span> <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Blog Post 2 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.pexels.com/photos/3931638/pexels-photo-3931638.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" class="w-full h-56 object-cover" alt="Child playing with blocks">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-gray-800">10 Learning Game Ideas</h3>
+                            <p class="text-gray-500 mt-2 text-sm">10 ideas for learning with fun for your kids to have fun.</p>
+                            <a href="#" class="inline-flex items-center space-x-2 text-[#6B46C1] font-semibold mt-4"><span>Read More</span> <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Blog Post 3 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <img src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" class="w-full h-56 object-cover" alt="Child on laptop">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-gray-800">Fun Activities for Kids</h3>
+                            <p class="text-gray-500 mt-2 text-sm">Want to do something outside the laptop? Here are our recommendations.</p>
+                            <a href="#" class="inline-flex items-center space-x-2 text-[#6B46C1] font-semibold mt-4"><span>Read More</span> <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="h-8 w-8 text-white" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-5H8v-2h3V7h2v3h3v2h-3v5h-2z"/></svg>
+                        <span class="text-2xl font-bold">WonderKids</span>
+                    </div>
+                    <p class="mt-4 text-gray-400">The best place for kids to learn and play, fostering creativity and growth in a fun, safe environment.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg">Quick Links</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Features</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg">Contact</h4>
+                    <ul class="mt-4 space-y-2 text-gray-400">
+                        <li><i class="fas fa-envelope mr-2"></i> hello@wonderkids.com</li>
+                        <li><i class="fas fa-phone mr-2"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Fun Lane, KidCity</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg">Follow Us</h4>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center text-gray-500">
+                &copy; 2024 WonderKids. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://odoe.studio" target="_blank" class="fixed bottom-4 right-4 bg-black text-white text-xs font-semibold px-3 py-1.5 rounded-full shadow-lg hover:bg-gray-800 transition-colors z-50">
+        Made by Odoe
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
